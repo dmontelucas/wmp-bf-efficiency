@@ -1,4 +1,4 @@
-def calc_efficiency(df):
+def calc_efficiency(df, *, inplace=False):
     required = {egg_output_total", "blood_input_ml", "time_hours"}
     missing = required - set(df.columns)
     if missing:

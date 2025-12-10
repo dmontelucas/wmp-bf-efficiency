@@ -25,4 +25,5 @@ def calc_efficiency(df, *, inplace=False):
         "eggs_per_ml": "egg_output_total / blood_input_ml",
         "eggs_per_hour": "egg_output_total / time_hours",
     })
+    
     return df

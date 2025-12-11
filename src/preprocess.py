@@ -1,5 +1,5 @@
 def calc_efficiency(df, *, inplace=False):
-    required = {egg_output_total", "blood_input_ml", "time_hours"}
+    required = {"egg_output_total", "blood_input_ml", "time_hours"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
@@ -19,7 +19,7 @@ def calc_efficiency(df, *, inplace=False):
         raise ValueError("egg_output_total must be non-negative.")
     
     df["eggs_per_ml"] = eggs / blood
-    df[eggs_per_hour"] = eggs / time
+    df["eggs_per_hour"] = eggs / time
        
     df.attrs.setdefault("derived_features", {}).update({
         "eggs_per_ml": "egg_output_total / blood_input_ml",
